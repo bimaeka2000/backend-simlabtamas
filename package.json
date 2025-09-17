@@ -8,6 +8,7 @@
     "nodemon": "^3.1.10"
   },
   "scripts": {
-    "devdaniel" : "nodemon app/index.js"
+    "devdaniel" : "nodemon app/index.js",
+    "dev": "nodemon server.js"
   }
 }
