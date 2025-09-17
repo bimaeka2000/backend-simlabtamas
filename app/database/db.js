@@ -12,7 +12,7 @@ const sequelize = new Sequelize('', process.env.DB_USER, '', {
 
   sequelize
   .authenticate()
-  .then(() => console.log("Koneksi database berhasil!"))
-  .catch((err) => console.error("Gagal koneksi:", err));
+  .then(() => console.log("Connection to database successfully!"))
+  .catch((err) => console.error("Connection Failed:", err));
   
 export default sequelize;
