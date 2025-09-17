@@ -25,15 +25,11 @@ app.delete('/user/delete', (req, res) => {
 // ROUTER USER END
 
 
-
-
-
 // ROUTER LOGIN
 app.get('/authentication', (req, res) => {
   res.send("route get authentication")
 })
 // ROUTER LOGIN END
-
 
 
 
@@ -60,10 +56,6 @@ app.delete('/penelitian/delete/id_penelitian', (req, res) => {
 // ROUTER PENELITIAN END
 
 
-
-
-
-
 // ROUTER PENGABDIAN
 app.get('/pengabdian/all', (req, res) => {
   res.send('ini route pengabdian')
@@ -85,12 +77,6 @@ app.delete('/pengabdian/delete/:id_pengabdian', (req, res) => {
   res.send('route delete pengabdian')
 })
 // ROUTER PENGABDIAN END
-
-
-
-
-
-
 
 
 app.listen(port, () => {
