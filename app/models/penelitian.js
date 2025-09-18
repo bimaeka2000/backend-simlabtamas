@@ -1,0 +1,49 @@
+import {Sequelize, DataTypes} from 'sequelize';
+import sequelize from '../db.js';
+
+const Penelitian = sequelize.define('penelitian',{
+    judul_penelitian:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    rumpun_ilmu:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    bidang_penelitian:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    persona_penelitian:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    mitra_penelitian:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    lama_penelitian:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    biaya_penelitian:{
+        type:sequelize.INT,
+        allowNull:true,
+    },
+    tahun_akademik:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    tkt:{
+        type:sequelize.INT,
+        allowNull:true,
+    },
+    skema:{
+        type:sequelize.STRING,
+        allowNull:true,
+    },
+    usulan:{
+        type:sequelize.STRING,
+        allowNull:true,
+    }
+})
